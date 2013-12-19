@@ -5,5 +5,9 @@
   "description": "Looks Good To Me.",
   "permissions": [
     "tabs", "http://*/*", "https://*/*", "clipboardWrite"
-  ]
+  ],
+  "browser_action": {
+    "default_title": "LGTM",
+    "default_popup": "./popup/popup.html"
+  }
 }
