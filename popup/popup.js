@@ -10,7 +10,7 @@ Page.prototype.load = function(){
       image.click(function(){
         var clipboard = $("<input/>");
         $("body").append(clipboard);
-        clipboard.val(image.attr("src")).select();
+        clipboard.val("![LGTM](" + image.attr("src") + ")").select();
         document.execCommand('copy');
         clipboard.remove();
       });
