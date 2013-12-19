@@ -1,0 +1,9 @@
+{
+  "name": "LGTM",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Looks Good To Me.",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*", "clipboardWrite"
+  ]
+}
