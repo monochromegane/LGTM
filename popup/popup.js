@@ -2,10 +2,18 @@ var Page = function(){
 };
 
 Page.prototype.load = function(){
+  var context = this;
   $(".image").each(function(){
-    var context = $(this);
+    var image = $(this);
     $.getJSON("http://www.lgtm.in/g?" + Math.random(), function (data) {
-      context.attr("src", data.imageUrl);
+      image.attr("src", data.imageUrl);
+      image.click(function(){
+        var clipboard = $("<input/>");
+        $("body").append(clipboard);
+        clipboard.val(image.attr("src")).select();
+        document.execCommand('copy');
+        clipboard.remove();
+      });
     });
   });
 };
