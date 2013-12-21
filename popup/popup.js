@@ -31,5 +31,8 @@ Page.prototype.load = function(){
 
 $(document).ready(function(){
   var page = new Page();
+  $("#reload").click(function(){
+    page.load();
+  });
   page.load();
 });
