@@ -8,6 +8,8 @@ Page.prototype.load = function(){
     $.getJSON("http://www.lgtm.in/g?" + Math.random(), function (data) {
       image.attr("src", data.imageUrl);
       image.click(function(){
+        $("#message").show(500);
+        setTimeout(function() { $("#message").hide(500) }, 1000);
         var clipboard = $("<input/>");
         $("body").append(clipboard);
         clipboard.val("![LGTM](" + image.attr("src") + ")").select();
