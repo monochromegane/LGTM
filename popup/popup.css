@@ -38,6 +38,15 @@
   background-color: #d35147;
 }
 
+.column {
+  text-align: center;
+}
+
+.loading {
+  display: none;
+  margin: 20px 110px 20px 110px;
+}
+
 .image {
   width: 250px;
   cursor: pointer;
