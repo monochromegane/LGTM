@@ -16,8 +16,8 @@ Page.prototype.load = function(){
 
         chrome.tabs.sendMessage(tabId, {image: markdown}, function(response){});
 
-        $("#message").show(500);
-        setTimeout(function() { $("#message").hide(500) }, 1000);
+        $(".message").show(500);
+        setTimeout(function() { $(".message").hide(500) }, 1000);
 
         var clipboard = $("<input/>");
         $("body").append(clipboard);

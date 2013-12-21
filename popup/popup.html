@@ -4,18 +4,17 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="../lib/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="./popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="./popup.css">
     <title>LGTM</title>
   </head>
-  <body>
-    <div id="message" style="display: none; background-color: blue; color: white; font-weight: bold;">copied.</div>
-    <h2>Looks Good To Me!!</h2>
-    <div class="command">
-      <input id="reload" type="button" value="More LGTM"/>
-    </div>
+  <body class="content">
+    <div class="message">copied.</div>
+    <h2 class="subject">Looks Good To Me!!</h2>
+    <p id="reload" class="button"><a href="#">More LGTM</a></p>
     <div class="images">
-      <div class="column"><img class="image" src="" width="200"/></div>
-      <div class="column"><img class="image" src="" width="200"/></div>
-      <div class="column"><img class="image" src="" width="200"/></div>
+      <div class="column"><img class="image border" src="" /></div>
+      <div class="column"><img class="image border" src="" /></div>
+      <div class="column"><img class="image border" src="" /></div>
     </div>
   </body>
 </html>
