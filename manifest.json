@@ -9,5 +9,12 @@
   "browser_action": {
     "default_title": "LGTM",
     "default_popup": "./popup/popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js":      ["./lib/jquery-2.0.3.min.js", "./content/content.js"],
+      "run_at":  "document_end"
+    }
+  ]
 }
