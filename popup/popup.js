@@ -7,9 +7,8 @@ Page.prototype.load = function(){
   chrome.tabs.query({"active": true}, function(tab){
     tabId = tab[0].id;
   });
-  $(".image").hide();
   $(".loading").show();
-  $(".image").each(function(){
+  $(".image").hide().each(function(){
     var image = $(this);
     $.getJSON("http://www.lgtm.in/g?" + Math.random(), function (data) {
       image.attr("src", data.imageUrl);
@@ -25,8 +24,7 @@ Page.prototype.load = function(){
         document.execCommand('copy');
         clipboard.remove();
       });
-      image.prev().hide();
-      image.show();
+      image.show().prev().hide();
     });
   });
 };
