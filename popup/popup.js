@@ -14,16 +14,14 @@ Page.prototype.load = function(){
     $.getJSON("http://www.lgtm.in/g?" + Math.random(), function (data) {
       image.attr("src", data.imageUrl);
       image.click(function(){
-        var markdown = "![LGTM](" + image.attr("src") + ")";
-
-        chrome.tabs.sendMessage(tabId, {image: markdown}, function(response){});
+        chrome.tabs.sendMessage(tabId, {image: "![LGTM](" + image.attr("src") + ")"}, function(response){});
 
         $(".message").show(500);
         setTimeout(function() { $(".message").hide(500) }, 1000);
 
         var clipboard = $("<input/>");
         $("body").append(clipboard);
-        clipboard.val(markdown).select();
+        clipboard.val(image.attr("src")).select();
         document.execCommand('copy');
         clipboard.remove();
       });
