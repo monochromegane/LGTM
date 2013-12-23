@@ -10,11 +10,17 @@ LGTM is a initial of "looks good to me".
 
 ## Install
 
+### For developers.
+
 - Checkout code.
 - Visit `chrome://extensions` in Chrome.
 - Check the `Developer mode`.
 - Click `Load unpacked extension...`.
 - Select the code directory.
+
+### For users.
+
+[Download here.](https://chrome.google.com/webstore/detail/lgtm/oeacdmeoegfagkmiecjjikpfgebmalof?hl=ja&gl=JP)
 
 ## Usage
 
