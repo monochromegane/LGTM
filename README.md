@@ -20,3 +20,5 @@ LGTM is a initial of "looks good to me".
 - When you click a image, the image url is copied to your clipboard.
 - If you have opened a `https://github.com/*/pull/*`, the markdowned image url will be inputed into a textarea.
 
+![](http://blog.monochromegane.com/images/2013/12/LGTM_screenshot.png)
+
