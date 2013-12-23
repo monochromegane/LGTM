@@ -12,7 +12,7 @@ Page.prototype.load = function(){
     var image = $(this);
     $.getJSON("http://www.lgtm.in/g?" + Math.random(), function (data) {
       image.attr("src", data.imageUrl);
-      image.click(function(){
+      image.unbind().click(function(){
         chrome.tabs.sendMessage(tabId, {image: "![LGTM](" + image.attr("src") + ")"}, function(response){});
 
         $(".message").show(500);
