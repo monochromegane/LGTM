@@ -1,6 +1,7 @@
-# LGTM
+# ![](images/icon38.png) LGTM
 
 This is a Chrome Extension for [LGTM.in/g](http://www.lgtm.in/).
+
 You can spice up your LGTM comments by this extension.
 
 ## What is LGTM
