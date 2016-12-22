@@ -17,7 +17,12 @@
   "content_scripts": [
     {
       "matches": ["https://github.com/*"],
-      "js":      ["./lib/jquery-2.0.3.min.js", "./content/content.js"],
+      "js":      ["./lib/jquery-2.0.3.min.js", "./content/github.js"],
+      "run_at":  "document_end"
+    },
+    {
+      "matches": ["https://bitbucket.org/*"],
+      "js":      ["./lib/jquery-2.0.3.min.js", "./content/bitbucket.js"],
       "run_at":  "document_end"
     }
   ],
