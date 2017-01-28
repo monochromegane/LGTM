@@ -22,7 +22,6 @@ Page.prototype.load = function() {
                 var attr = $("textarea[name='comment[body]']");
                 attr.val(oldMessage + "\n\n" + lgtmMessage);
 
-                console.log(lgtmMessage);
                 $(".message").show(500);
                 setTimeout(function() { $(".message").hide(500) }, 1000);
 
