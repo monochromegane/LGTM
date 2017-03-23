@@ -24,7 +24,7 @@ Page.prototype.load = function(){
 
         var clipboard = $("<input/>");
         $("body").append(clipboard);
-        clipboard.val(image.attr("src")).select();
+        clipboard.val(lgtmMessage).select();
         document.execCommand('copy');
         clipboard.remove();
       });
